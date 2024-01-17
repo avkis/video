@@ -5,10 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from "./routes/root";
-import { loader as rootLoader } from "./loader.ts";
-import ErrorPage from "./pages/errors/error-page.tsx";
-import Contact from "./routes/contacts.tsx";
-import Video from "./pages/video/Video.tsx";
+import ErrorPage from "./pages/errors/error-page";
+import Contact from "./routes/contacts";
+import Video from "./pages/video/Video";
+import {loader as routerLoader} from "./loader";
 import './index.css'
 
 const router = createBrowserRouter([
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-    loader: rootLoader,
+    loader: routerLoader,
     children: [
       {
         path: "contacts/:contactId",

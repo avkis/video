@@ -20,7 +20,7 @@ import {
   VolumeLowIcon,
   VolumeHighIcon, SeekBackwardIcon, SeekForwardIcon
 } from "./icons";
-import {createIcon} from "../../shared/icon/utils.ts";
+import {createIcon} from "../../shared/icon/utils";
 import {DefaultLayoutIcons} from "@vidstack/react/player/layouts/default";
 
 
