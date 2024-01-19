@@ -1,9 +1,9 @@
 import {Link, Outlet, useLoaderData} from "react-router-dom";
-import {Contact} from "./contacts.tsx";
+import {Contact} from "./contacts";
 
 export default function Root() {
   const contacts: Contact[] = useLoaderData() as Contact[];
-  console.log('+++ useLoaderData', contacts)
+  // console.log('+++ useLoaderData', contacts)
   let contactsNodes: JSX.Element[] = [];
   if (contacts && contacts.length) {
     contactsNodes = contacts.map((contact) => (

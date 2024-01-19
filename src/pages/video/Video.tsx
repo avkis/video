@@ -1,11 +1,10 @@
-import { MediaPlayer, MediaProvider, Poster} from '@vidstack/react';
-import { DefaultVideoLayout} from '@vidstack/react/player/layouts/default';
-import {customIcons} from "../../widgets/media-player/ui.tsx";
-import '@vidstack/react/player/styles/default/theme.css';
-import '@vidstack/react/player/styles/default/layouts/video.css';
-import './Video.css'
+import {MediaPlayer, MediaProvider, Poster} from '@vidstack/react';
 // import useMicrophone from "../../hooks/useMicrophone.ts";
 // import {useEffect} from "react";
+import {DionVideoLayout} from "../../widgets/media-player/layout";
+// import '@vidstack/react/player/styles/base.css';
+import '@vidstack/react/player/styles/default/theme.css';
+import './Video.css'
 
 function Video() {
   // const recorder =  useMicrophone();
@@ -25,7 +24,7 @@ function Video() {
               src="https://media-files.vidstack.io/sprite-fight/poster.webp"
               alt="Girl walks into campfire with gnomes surrounding her friend ready for their next meal!"
           />
-        <DefaultVideoLayout thumbnails="https://image.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/storyboard.vtt" icons={customIcons} />
+        <DionVideoLayout thumbnails="https://image.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/storyboard.vtt" />
       </MediaPlayer>
     </div>
   )

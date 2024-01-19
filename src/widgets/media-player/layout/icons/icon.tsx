@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from 'react';
-import {DionIconProps} from "./types.ts";
+import {DionIconProps} from "./types";
 
 
 const Icon = /* @__PURE__ */ React.forwardRef((props: DionIconProps, ref) => {
